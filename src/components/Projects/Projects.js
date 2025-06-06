@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import AIAGENT from "../../Assets/Projects/AIAGENT.png";
+import Backend from "../../Assets/Projects/Backend.png";
+import Entertainment from "../../Assets/Projects/Entertainment.png";
+import EZYEV from "../../Assets/Projects/EZYEV.png";
+import LeadBot from "../../Assets/Projects/LeadBot.png";
+import RAG from "../../Assets/Projects/RAG.png";
+import Resume from "../../Assets/Projects/resumebuilder.png";
 
 function Projects() {
   return (
@@ -21,70 +22,81 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Entertainment}
+              isBlog={false}
+              title="Entertainment App"
+              description="The Entertainment App is a web application that allows users to browse, search, and bookmark movies and TV series, powered by The Movie Database (TMDb) API. With a responsive design and secure user authentication, it provides a seamless experience for discovering entertainment content."
+              ghLink="https://github.com/AbirDhar79/Entertainment_App"
+             demoLink="entertainment-app-bice.vercel.app"      
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={Backend}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="bookMyShow backend"
+              description="A fullstack movie booking application inspired by BookMyShow, built with React frontend and Express.js backend."
+              ghLink="https://github.com/AbirDhar79/bookMyShow_backendcapstone"
+             demoLink="https://book-my-show-backendcapstone.vercel.app"      
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={LeadBot}
+              isBlog={false}
+              title="LeadBot"
+              description="An automated bot to monitor and extract relevant posts from social media platforms, notify clients about the latest posts related to specified keywords, and gather contact details of the poster"
               ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              // demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={EZYEV}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="ezyev-authpage"
+              description="This Next.js project demonstrates a basic authentication system using ShadCN UI. Users can log in with a hardcoded username and password. Upon successful login, the user is redirected to a protected page. The project uses React Context for state management to persist the authentication state across page reloads. The authentication form is styled us"
+              ghLink="https://github.com/AbirDhar79/ezyev-authpage"
+              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={AIAGENT}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="CrewAI linkedin Agents
+"
+              description="aA multi-agent AI system that automatically transforms YouTube video content into polished, engaging LinkedIn posts, optimizing them for maximum reach and professional impact."
+              ghLink="https://github.com/AbirDhar79/CrewAI_linkedinAgents"
+              // demoLink=""              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={RAG}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="RAG application with DeepSeek in Local
+"
+              description="This project reflects my commitment to hands-on learning and my drive to explore cutting-edge AI technologies like RAG and DeepSeek. This project is also built on my previous experience working on an RAG chatbot, using similar LLM and Langchain technologies."
+              ghLink="https://github.com/AbirDhar79/RAG-application-with-DeepSeek-in-Local"
+              // demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={Resume}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="resume-builder-2.0"
+              description="Resume builder is a web application where anyone can create a resume with ease and choose from different available templates."
+              ghLink="https://github.com/AbirDhar79/resume-builder-2.0"
+              // demoLink=""
             />
           </Col>
         </Row>

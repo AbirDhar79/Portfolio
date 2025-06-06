@@ -9,6 +9,7 @@ import {
   SiJira,
   SiDocker,
   SiGit,
+  SiRaspberrypi,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -37,6 +38,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiRaspberrypi />
       </Col>
     </Row>
   );

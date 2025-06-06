@@ -18,6 +18,7 @@ import {
   SiFirebase,
   SiPostgresql,
   SiGooglecloud,
+  SiRaspberrypi,
 } from "react-icons/si";
 
 function Techstack() {
@@ -67,6 +68,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiAngularSimple />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiRaspberrypi />
       </Col>
     </Row>
   );
