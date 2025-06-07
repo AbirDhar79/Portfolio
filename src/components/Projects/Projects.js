@@ -49,7 +49,7 @@ function Projects() {
               isBlog={false}
               title="LeadBot"
               description="An automated bot to monitor and extract relevant posts from social media platforms, notify clients about the latest posts related to specified keywords, and gather contact details of the poster"
-              ghLink="https://github.com/soumyajit4419/Chatify"
+              ghLink="https://github.com/AbirDhar79/LeadBOt"
               // demoLink=""
             />
           </Col>
