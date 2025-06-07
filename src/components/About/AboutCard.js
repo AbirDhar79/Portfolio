@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Abir Dhar </span>
             from <span className="purple"> Pune, India.</span>
             <br />
-            I am currently employed as a software developer at Innotronix Labs
+            I am currently employed as a software developer at Innotronix Labs.
             I completed my M.Tech in ECE at NIT Durgapur, with a specialization in Next-Generation Communication and Networking (Telecom/Wireless Telecom).".
             <br />
             <br />
